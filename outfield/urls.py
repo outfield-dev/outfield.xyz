@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from home.views import HomeView
+from home.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-		url(r'^', HomeView.as_view()),
+		url(r'^$', HomeView.as_view()),
+		url(r'^services/', ServicesView.as_view()),
+		url(r'^about/', AboutView.as_view()),
 ]
