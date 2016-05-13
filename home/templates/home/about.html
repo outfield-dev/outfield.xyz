@@ -109,6 +109,7 @@
 							<section class="6u 12u(narrower)">
 								<h3>Get In Touch</h3>
 								<form id="contact-form">
+									{% csrf_token %}
 									<div class="row 50%">
 										<div class="6u 12u(mobilep)">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -126,6 +127,7 @@
 										<div class="12u">
 											<ul class="actions">
 												<li><input type="submit" class="button alt" value="Send Message" /></li>
+												<li><input id="success" class="button success" value="Message sent" style="visibility:hidden;" /></li>
 											</ul>
 										</div>
 									</div>

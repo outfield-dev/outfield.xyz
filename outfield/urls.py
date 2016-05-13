@@ -23,4 +23,5 @@ urlpatterns = [
 		url(r'^$', HomeView.as_view()),
 		url(r'^services/', ServicesView.as_view()),
 		url(r'^about/', AboutView.as_view()),
+		url(r'^email/', send_email),
 ]
