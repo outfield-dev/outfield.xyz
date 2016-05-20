@@ -14,9 +14,14 @@ class Email(models.Model):
 
 	def send(self):
 		send_mail(
-			'contact form',
+			'[DJANGO] Contact Form',
 			self.message,
 			self.email,
-			'nicholas.d.piano@gmail.com',
-			'',
+			['outfield.url@gmail.com'],
 		)
+
+class Impression(models.Model):
+
+	### Properties
+	date_created = models.DateTimeField(auto_now_add=True)
+	page = models.CharField(max_length=255)

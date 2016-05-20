@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from os.path import join, exists
+from os.path import join, exists, dirname, abspath
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = dirname(dirname(abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -58,7 +58,9 @@ ROOT_URLCONF = 'outfield.urls'
 TEMPLATES = [
 	{
 		'BACKEND': 'django.template.backends.django.DjangoTemplates',
-		'DIRS': [],
+		'DIRS': [
+			join(BASE_DIR, 'templates'),
+		],
 		'APP_DIRS': True,
 		'OPTIONS': {
 			'context_processors': [
@@ -117,6 +119,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'outfield.url@gmail.com'
+EMAIL_HOST_PASSWORD = 'marshall2016lol'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/

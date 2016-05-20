@@ -1,19 +1,22 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.http import JsonResponse
-from home.models import Email
+from home.models import Email, Impression
 
 # Create your views here.
 class HomeView(View):
 	def get(self, request):
+		Impression.objects.create(page='home')
 		return render(request, 'home/home.html', {})
 
 class ServicesView(View):
 	def get(self, request):
+		Impression.objects.create(page='services')
 		return render(request, 'home/services.html', {})
 
 class AboutView(View):
 	def get(self, request):
+		Impression.objects.create(page='about')
 		return render(request, 'home/about.html', {})
 
 def send_email(request):

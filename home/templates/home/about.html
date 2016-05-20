@@ -1,172 +1,70 @@
-{% load staticfiles %}
+{% extends 'base.html' %}
+{% load static %}
 
-<!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>About Outfield</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
-		<div id="page-wrapper">
+{% block title %}About Outfield{% endblock %}
 
-			<!-- Header -->
-				<div id="header">
+{% block nav %}
+<nav id="nav">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/services">Services</a></li>
+		<li class="current"><a href="/about">About</a></li>
+	</ul>
+</nav>
+{% endblock %}
 
-					<!-- Logo -->
-						<h1><a href="index.html" id="logo">Outfield <em>crop mapping</em></a></h1>
+{% block content %}
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
 
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="/services/">Services</a></li>
-							<li class="current"><a href="/about/">About</a></li>
-						</ul>
-					</nav>
+			<!-- Content -->
 
-				</div>
+				<article>
+					<header>
+						<h2>About Outfield</h2>
+						<p>Meet the team.</p>
+					</header>
 
-			<!-- Main -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div id="content">
+					{# <span class="image featured"><img src="images/banner.jpg" alt="" /></span>#}
 
-							<!-- Content -->
-
-								<article>
-									<header>
-										<h2>About Outfield</h2>
-										<p>Meet the team.</p>
-									</header>
-
-									{# <span class="image featured"><img src="images/banner.jpg" alt="" /></span>#}
-
-									<p>Outfield is based in Cambridge, England - where agriculture meets high tech. We operate across
-                                                  Cambridgeshire, Norfolk and Suffolk.</p>
-								</article>
-						</div>
-					</div>
-				</section>
+					<p>Outfield is based in Cambridge, England - where agriculture meets high tech. We operate across
+																					Cambridgeshire, Norfolk and Suffolk.</p>
+				</article>
+		</div>
+	</div>
+</section>
 
 <!-- Highlights -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row 200%">
-							<section class="4u 12u(narrower)">
-								<div class="box highlight">
-									<a href="#" class="image left"><img src="{% static 'home/img/jim01.jpg' %}" alt="" /></a>
-									<h3>Jim</h3>
-									<p>Jim is a mechanical engineer with three year's experience in safety consulting
-                                                  in the offshore oil and gas industry. He enjoys climbing, martial arts and Turkish delight.</p>
-								</div>
-							</section>
-							<section class="4u 12u(narrower)">
-								<div class="box highlight">
-                  <a href="#" class="image left"><img src="{% static 'home/img/nick01.jpg' %}" alt="" /></a>
-									<h3>Nick</h3>
-									<p>Nick is an astrophysicist with a Master's degree in image analysis. He loves music, rowing
-                                                  and cleaning up Oli's attempts at web development.</p>
-								</div>
-							</section>
-							<section class="4u 12u(narrower)">
-								<div class="box highlight">
-									<a href="#" class="image left"><img src="{% static 'home/img/oli01.jpg' %}" alt="" /></a>
-									<h3>Oli</h3>
-									<p>Oli is an aerospace engineer with over three year's experience designing special missions
-                                                  aircraft. He is passionate about drones, and the vast potential they hold for mankind.</p>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="3u 6u(narrower) 12u$(mobilep)">
-								<h3>Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-							<section class="3u 6u$(narrower) 12u$(mobilep)">
-								<h3>More Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
-								</ul>
-							</section>
-							<section class="6u 12u(narrower)">
-								<h3>Get In Touch</h3>
-								<form id="contact-form">
-									{% csrf_token %}
-									<div class="row 50%">
-										<div class="6u 12u(mobilep)">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="6u 12u(mobilep)">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-									</div>
-									<div class="row 50%">
-										<div class="12u">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-									</div>
-									<div class="row 50%">
-										<div class="12u">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-												<li><input id="success" class="button success" value="Message sent" style="visibility:hidden;" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-						</div>
-					</div>
-
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						</ul>
-
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row 200%">
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/jim01.jpg' %}" alt="" /></a>
+					<h3>Jim</h3>
+					<p>Jim is a mechanical engineer with three year's experience in safety consulting
+																					in the offshore oil and gas industry. He enjoys climbing, martial arts and Turkish delight.</p>
 				</div>
-
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/nick01.jpg' %}" alt="" /></a>
+					<h3>Nick</h3>
+					<p>Nick is an astrophysicist with a Master's degree in image analysis. He loves music, rowing
+																					and cleaning up Oli's attempts at web development.</p>
+				</div>
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/oli01.jpg' %}" alt="" /></a>
+					<h3>Oli</h3>
+					<p>Oli is an aerospace engineer with over three year's experience designing special missions
+																					aircraft. He is passionate about drones, and the vast potential they hold for mankind.</p>
+				</div>
+			</section>
 		</div>
-
-		<!-- Scripts -->
-		<script src='{% static "js/jquery.min.js" %}'></script>
-		<script src='{% static "js/jquery.dropotron.min.js" %}'></script>
-		<script src='{% static "js/skel.min.js" %}'></script>
-		<script src='{% static "js/util.js" %}'></script>
-		<script src='{% static "js/main.js" %}'></script>
-
-	</body>
-</html>
+	</div>
+</section>
+{% endblock %}
