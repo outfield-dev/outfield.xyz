@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Outfield{% endblock %}
+
+{% block nav %}
+<nav id="nav">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/services">Services</a></li>
+		<li class="current"><a href="/about">About</a></li>
+	</ul>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Main -->
+<section class="wrapper style1">
+	<div class="container">
+		<div id="content">
+
+			<!-- Content -->
+
+			{#
+
+			1. Top blurb about outfield
+			2. 3 pictures of the team (pic top, title, blurb)
+			3. Piece about the drone maybe.
+
+			#}
+
+			<section class="wrapper style1">
+			 <div class="container">
+				 <div class="row">
+					 <section class="4u 12u(narrower)">
+						 <div class="box post">
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 varasdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+						 </div>
+					 </section>
+					 <section class="8u 12u(narrower)">
+						 <div class="box post">
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 varasdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+							 asdlkajsdlkasjdalskdj asdlkajsdlkasjdalskdj
+						 </div>
+					 </section>
+				 </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+
+<!-- Highlights -->
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row 200%">
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/jim01.jpg' %}" alt="" /></a>
+					<h3>Jim</h3>
+					<p>Jim is a mechanical engineer with three year's experience in safety consulting
+																					in the offshore oil and gas industry. He enjoys climbing, martial arts and Turkish delight.</p>
+				</div>
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/nick01.jpg' %}" alt="" /></a>
+					<h3>Nick</h3>
+					<p>Nick is an astrophysicist with a Master's degree in image analysis. He loves music, rowing
+																					and cleaning up Oli's attempts at web development.</p>
+				</div>
+			</section>
+			<section class="4u 12u(narrower)">
+				<div class="box highlight">
+					<a href="#" class="image left"><img src="{% static 'home/img/oli01.jpg' %}" alt="" /></a>
+					<h3>Oli</h3>
+					<p>Oli is an aerospace engineer with over three year's experience designing special missions
+																					aircraft. He is passionate about drones, and the vast potential they hold for mankind.</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+{% endblock %}
