@@ -85,7 +85,7 @@ DATABASES = {
 		'NAME': 'NicholasPiano$outfield_db',
 		'USER': 'NicholasPiano',
 		'PASSWORD': 'uqnhs77f',
-		'HOST': 'mysql.server',
+		'HOST': 'arkaeologic.mysql.pythonanywhere-services.com',
 	}
 }
 
