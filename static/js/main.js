@@ -103,6 +103,9 @@
 		})
 
 		// clear fields
+		$('input[name=name]').val('');
+		$('input[name=email]').val('');
+		$('textarea[name=message]').val('Message sent');
 
 		// show message
 	});
