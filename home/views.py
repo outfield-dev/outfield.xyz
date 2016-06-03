@@ -14,6 +14,21 @@ class ServicesView(View):
 		Impression.objects.create(page='services')
 		return render(request, 'home/services.html', {})
 
+class MappingServicesView(View):
+	def get(self, request):
+		Impression.objects.create(page='services')
+		return render(request, 'home/s_mapping.html', {})
+
+class MarginServicesView(View):
+	def get(self, request):
+		Impression.objects.create(page='services')
+		return render(request, 'home/s_margins.html', {})
+
+class WeedServicesView(View):
+	def get(self, request):
+		Impression.objects.create(page='services')
+		return render(request, 'home/s_weeds.html', {})
+
 class AboutView(View):
 	def get(self, request):
 		Impression.objects.create(page='about')

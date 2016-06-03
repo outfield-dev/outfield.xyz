@@ -19,9 +19,12 @@ from django.contrib import admin
 from home.views import *
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-		url(r'^$', HomeView.as_view()),
-		url(r'^services/', ServicesView.as_view()),
-		url(r'^about/', AboutView.as_view()),
-		url(r'^email/', send_email),
+  url(r'^admin/', admin.site.urls),
+	url(r'^$', HomeView.as_view()),
+	url(r'^services/', ServicesView.as_view()),
+	url(r'^services/crop-mapping', MappingServicesView.as_view()),
+	url(r'^services/field-margin-mapping', MarginServicesView.as_view()),
+	url(r'^services/weed-detection', WeedServicesView.as_view()),
+	url(r'^about/', AboutView.as_view()),
+	url(r'^email/', send_email),
 ]
