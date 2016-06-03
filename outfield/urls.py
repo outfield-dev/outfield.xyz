@@ -21,7 +21,7 @@ from home.views import *
 urlpatterns = [
   url(r'^admin/', admin.site.urls),
 	url(r'^$', HomeView.as_view()),
-	url(r'^services/', ServicesView.as_view()),
+	url(r'^services$', ServicesView.as_view()),
 	url(r'^services/crop-mapping', MappingServicesView.as_view()),
 	url(r'^services/field-margin-mapping', MarginServicesView.as_view()),
 	url(r'^services/weed-detection', WeedServicesView.as_view()),
