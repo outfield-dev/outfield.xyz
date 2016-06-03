@@ -81,14 +81,10 @@ WSGI_APPLICATION = 'outfield.wsgi.application'
 
 DATABASES = {
 	'default': {
-		'ENGINE': 'django.db.backends.mysql',
-		'NAME': 'NicholasPiano$outfield_db',
-		'USER': 'NicholasPiano',
-		'PASSWORD': 'uqnhs77f',
-		'HOST': 'NicholasPiano.mysql.pythonanywhere-services.com',
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': 'db.sqlite3',
 	}
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
