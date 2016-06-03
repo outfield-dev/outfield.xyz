@@ -83,4 +83,61 @@
 
 	});
 
+	$('#contact-form').find('input[type="submit"]').click(function () {
+		// prevent it from submitting email
+	  event.preventDefault();
+
+		// send email via ajax
+		var formData = {
+			'name'              : $('input[name=name]').val(),
+			'email'             : $('input[name=email]').val(),
+			'message'    : $('textarea[name=message]').val()
+		};
+
+		$.ajax({
+			type: 'post', // define the type of HTTP verb we want to use (POST for our form)
+			url: '/email/', // the url where we want to POST
+			data: formData, // our data object
+			dataType: 'json', // what type of data do we expect back from the server
+			encode: true,
+		})
+
+		// clear fields
+		$('input[name=name]').val('');
+		$('input[name=email]').val('');
+		$('textarea[name=message]').val('Message sent');
+
+		// show message
+	});
+
+	// using jQuery
+	function getCookie(name) {
+	    var cookieValue = null;
+	    if (document.cookie && document.cookie != '') {
+	        var cookies = document.cookie.split(';');
+	        for (var i = 0; i < cookies.length; i++) {
+	            var cookie = jQuery.trim(cookies[i]);
+	            // Does this cookie string begin with the name we want?
+	            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+	                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+	                break;
+	            }
+	        }
+	    }
+	    return cookieValue;
+	}
+	var csrftoken = getCookie('csrftoken');
+
+	function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	}
+	$.ajaxSetup({
+	    beforeSend: function(xhr, settings) {
+	        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+	            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	        }
+	    }
+	});
+
 })(jQuery);

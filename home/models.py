@@ -14,7 +14,7 @@ class Email(models.Model):
 
 	def send(self):
 		send_mail(
-			'[DJANGO] Contact Form',
+			'[DJANGO] Contact Form: {} - {}'.format(self.name, self.email),
 			self.message,
 			self.email,
 			['outfield.url@gmail.com'],
