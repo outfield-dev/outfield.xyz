@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Outfield Crop Mapping{% endblock %}
+{% block title %}Outfield Aerial Surveys{% endblock %}
 
 {% block content %}
 <!-- Banner -->
 <section id="banner" style="overflow:hidden">
 	<img style="position:relative; top:-300px" src="{% static 'home/img/banner.jpg' %}" />
 	<header>
-		<h2>Outfield: <em>Seriously useful aerial crop mapping</em></h2>
+		<h2>Outfield: <em>Practical farming driving aerospace innovation</em></h2>
 		<!--<a href="#" class="button">Learn More</a>-->
 	</header>
 </section>
@@ -23,156 +23,114 @@
 	</div>
 </section>
 
-<!-- Highlights -->
+<!-- Future of agriculture -->
 <section class="wrapper style1">
 	<div class="container">
-		<div class="row 200%">
+      	<div id="content"	
+                <article>
+				<header>
+					<h2>What is the future of agriculture?</h2>
+				</header>
+				<p>We believe the future lies in quick and simple aerial surveys providing data to drive better farming practices. Using unmanned aerial vehicles (drones), Outfield is building systems that improve efficiency and save farmers time and money.</p>
+                      <p>Designed by growers, built by us.</p>
+      		</article>
+          </div>
+    </div>
+</section>
+
+<!-- How does it work -->
+<section class="wrapper style1">
+	<div class="container">
+      	<div id="content"	
+                <article>
+				<header>
+					<h2>How does it work? </h2>
+				</header>
+				<p>Our approach is focussed on spending time face to face with farmers, in order to develop effective solutions to current problems. Combining local knowledge of farming with Outfield's expertise in drone operation and imagery analysis, we are developing new systems that will help your farm, today.</p>
+                      <p>Our current projects include:</p>
+      		</article>
+           </div>
+      	<div class="row 200%">
 			<section class="4u 12u(narrower)">
 				<div class="box highlight">
-					<i class="icon major fa-paper-plane"></i>
-					<h3>Aerial Data</h3>
-					<p>We collect high fidelity data using our unmanned aerial platforms: cheaply, accurately, repeatably.</p>
+					<a class="image center"><img style="width:100%" src="{% static 'home/img/margin02.jpg' %}" alt="" /></a>
+					<h3>Field Margin Mapping</h3>
+					<p>Fast and accurate aerial surveys of field boundaries to help you meet your Countryside Stewardship Scheme obligations.</p>
 				</div>
 			</section>
 			<section class="4u 12u(narrower)">
 				<div class="box highlight">
-					<i class="icon major fa-pencil"></i>
-					<h3>Concise Analysis</h3>
-					<p>We provide you with just the information you need...</p>
+					<a class="image center"><img style="width:100%" src="{% static 'home/img/irrigation02.jpg' %}" alt="" /></a>
+					<h3>Precision Farming Inputs</h3>
+					<p>Detailed scans of vegetation index and biomass data, that plug straight into your current precision farming systems.</p>
 				</div>
 			</section>
 			<section class="4u 12u(narrower)">
 				<div class="box highlight">
-					<i class="icon major fa-wrench"></i>
-					<h3>High Impact</h3>
-					<p>...to allow you to make decisions on the ground and realise your higher yields.</p>
+					<a class="image center"><img style="width:100%" src="{% static 'home/img/blackgrass_in_barley02.jpg' %}" alt="" /></a>
+					<h3>Weed Detection</h3>
+					<p>High resolution plots highlighting problem areas, providing you with the tools you needs for better weed management.</p>
 				</div>
 			</section>
 		</div>
 	</div>
 </section>
 
-<!-- Services -->
+<!-- Safety and privacy-->
 <section class="wrapper style1">
 	<div class="container">
-		<div id="content">
-
-			<!-- Content -->
-			 <section class="wrapper style1">
-			 	<div class="container">
-			 		<div class="row">
-						<section class="4u 12u(narrower)">
-							<div class="box post">
-								<img style="position:relative; height:100%; width:100%" src="{% static 'home/img/irrigation02.jpg' %}" alt="" />
-							</div>
-						</section>
-			 			<section class="8u 12u(narrower)">
-							<h4>Mapping for Precision Farming</h4>
-			 				<div class="box post">
-								<p>Outfield aerial mapping forms an essential input to your precision farming system.
-                                            Using lightweight multi-spectral cameras, fields are quickly and accurately mapped from the
-                                            air. Plots of vegetation index (either NDVI or SARI) are generated, indicating levels of plant stress across
-                                            the whole field. This data can be easily related to crop nitrogen levels, allowing you to
-                                            precisely target your fertiliser applications.</p>
-                                            <p>Precision farming in this manner can help you achieve more uniform yields across your field,
-                                            increase total yields, reduce your input costs, and minimise your environmental impact.</p>
-                                            <p>Contact us at the bottom of this page to find out more about Outfield precision farming.</p>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-						<section class="4u 12u(narrower)">
-							<div class="box post">
-								<img style="position:relative; height:100%; width:100%" src="{% static 'home/img/margin02.jpg' %}" alt="" />
-							</div>
-						</section>
-						<section class="8u 12u(narrower)">
-							<h4>Field Margin Mapping</h4>
-							<div class="box post">
-								<p>If you maintain field margins as part of a Countryside Stewardship Scheme, you will be keen
-                                            to ensure those margins are the correct size to secure your payments and avoid hefty fines.
-                                            Using our aerial mapping systems, Outfield can quickly and accurately survey field margins
-                                            to ensure they meet the required width.</p>
-                                            <p>Whether you are self-auditing, or just for piece of mind, Outfield can survey many kilometres
-                                            of field boundaries in a fraction of the time of a full RPA inspection. Areas where corrective
-                                            measures should be taken are highlighted, and you can easily review back-to-back comparisons
-                                            with previous surveys.</p>
-                                            <p>Contact us at the bottom of this page to find out more about Outfield field margin mapping.</p>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-						<section class="4u 12u(narrower)">
-							<div class="box post">
-								<img style="position:relative; height:100%; width:100%" src="{% static 'home/img/blackgrass_in_barley02.jpg' %}" alt="" />
-							</div>
-						</section>
-						<section class="8u 12u(narrower)">
-							<h4>Coming Soon...</h4>
-							<div class="box post">
-								<p>We are constantly researching, developing and testing new and innovative services unmanned
-                                            aerial vehicles can provide. Currently, we are working on systems for accurate weed detection:
-                                            for black-grass and for potato blight.</p>
-                                            <p>We are keen to form partnerships with farmers and crop producers, to put our research into
-                                            practice. If you are interested in becoming an Outfield research partner, contact us at the
-                                            bottom of this page.</p>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</div>
+      	<div id="content"	
+                <article>
+				<header>
+					<h2>Priortising safety and privacy</h2>
+				</header>
+				<p>Our highest priorities are public safety and the privacy of our clients. All of our operations are fully compliant with UK drone legislation.</p>
+      		</article>
+          </div>
+    </div>
 </section>
 
-<!-- About -->
+<!-- What happens next -->
 <section class="wrapper style1">
 	<div class="container">
-		<div id="content">
-
-			<!-- Content -->
-			<section class="wrapper style1">
-			 <div class="container">
-				 <div class="row">
-					 <section class="4u 12u(narrower)">
-						 <div class="box post">
-						 	<img style="position:relative; height:100%; width:100%" src="{% static 'home/img/wheat-stock03.jpg' %}" alt="" />
-						 </div>
-					 </section>
-					 <section class="8u 12u(narrower)">
-						 <h4>About Outfield</h4>
-						 <div class="box post">
-							 <p>At Outfield we are passionate about unmanned aerial systems (UASs or drones). We envision a
-                                        world where flying robots help us with daily tasks; from agriculture to search
-                                        and rescue, from industrial inspection to traffic management. We are striving to
-                                        build systems for drones to interact meaningfully with the world around them, while operating
-                                        safely and responsibly. We operate both multi-rotor and fixed wing aircraft.</p>
-                                        <p>Outfield is based in Cambridge, England. Meet the Outfield team below.</p>
-						 </div>
-					 </section>
-				 </div>
-				</div>
-			</section>
-		</div>
-	</div>
+      	<div id="content"	
+                <article>
+				<header>
+					<h2>What happens next?</h2>
+				</header>
+				<p>Outfield is working with farmers and researchers to develop a range of agricultural survey solutions. We’re always interested in discussing problems and possible solutions, and in forming new partnerships with industry.</p>
+                      <p>If you’re interested in any of the information here, would like to be involved, or would like to discuss our services further, get in contact with us at the bottom of this page.</p>
+      		</article>
+          </div>
+    </div>
 </section>
+
+<!-- Meet the team -->
 <section class="wrapper style1">
 	<div class="container">
-		<div class="row 200%">
+      	<div id="content"	
+                <article>
+				<header>
+					<h2>Meet the team</h2>
+				</header>
+				<p>Outfield is based in Cambridge, England.</p>
+      		</article>
+           </div>
+      	<div class="row 200%">
 			<section class="4u 12u(narrower)">
 				<div class="box highlight">
 					<a class="image center"><img style="width:100%" src="{% static 'home/img/jim01.jpg' %}" alt="" /></a>
 					<h3>Jim</h3>
-					<p>Jim is a mechanical engineer with significant experience in safety consulting
-					in the offshore oil and gas industry. He enjoys climbing, martial arts and Turkish delight.</p>
+					<p>Jim is an engineer and risk consultant working in a variety of industries, who has also developed UK safety 
+                            legislation and best practice guidance. He loves climbing, hiking and fine whisky.</p>
 				</div>
 			</section>
 			<section class="4u 12u(narrower)">
 				<div class="box highlight">
 					<a class="image center"><img style="width:100%" src="{% static 'home/img/nick01.jpg' %}" alt="" /></a>
 					<h3>Nicholas</h3>
-					<p>Nicholas is an astrophysicist with a passion for image analysis, having worked with everything from stars to cancer cells. He loves art, robots, and web design.</p>
+					<p>Nicholas is an astrophysicist with a passion for image analysis, having worked with everything from stars to 
+                            cancer cells. He loves art, robots, and web design.</p>
 				</div>
 			</section>
 			<section class="4u 12u(narrower)">
