@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.views.generic import View
 from django.http import JsonResponse
 from home.models import Email, Impression
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 # Create your views here.
+@ensure_csrf_cookie
+def base_view(request):
+	Impression.objects.create(page='home')
+	return render(request, 'base.html', {})
+
 class HomeView(View):
 	def get(self, request):
 		Impression.objects.create(page='home')
