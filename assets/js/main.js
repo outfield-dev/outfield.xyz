@@ -19,7 +19,7 @@
 		}
 	});
 
-	$('#contact-form').find('.btn').click(function () {
+	$('#contact-form').find('.btn').click(function (event) {
 		// prevent it from submitting email
 		event.preventDefault();
 
