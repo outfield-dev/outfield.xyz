@@ -17,7 +17,7 @@ class Email(models.Model):
 			'[DJANGO] Contact Form: {} - {}'.format(self.name, self.email),
 			self.message,
 			self.email,
-			['outfield.url@gmail.com'],
+			['inquiries@outfield.xyz'],
 		)
 
 class Impression(models.Model):
