@@ -57,7 +57,7 @@ body {
 
 #future-of-agriculture {
 	min-height: 300px;
-	background-color: #778888;
+	background-color: #eee;
 }
 
 #how-does-it-work {
@@ -100,6 +100,7 @@ body {
 
 #what-happens-next {
 	min-height: 200px;
+	background-color: #eee;
 }
 
 #team {
@@ -140,14 +141,16 @@ body {
 
 .section-title {
 	text-align: center;
+	font-size: 28px;
 }
 
 .section-subtitle {
 	text-align: center;
 }
 
-.section-text {
-
+.section p {
+	text-align: center;
+	font-size: 18px;
 }
 
 /* Subdivisions of a full page */
@@ -184,8 +187,9 @@ body {
 	padding-right: 10%;
 }
 
-.block p {
-	text-align: center;
+.shield p {
+	text-align: left;
+	font-size: 18px;
 }
 
 .block .shield {
