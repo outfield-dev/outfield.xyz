@@ -81,8 +81,11 @@ WSGI_APPLICATION = 'outfield.wsgi.application'
 
 DATABASES = {
 	'default': {
-		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': 'db.sqlite3',
+		'ENGINE': 'django.db.backends.mysql',
+		'NAME': 'NicholasPiano$outfield_db',
+		'USER': 'NicholasPiano',
+		'PASSWORD': 'uqnhs77f',
+		'HOST': 'NicholasPiano.mysql.pythonanywhere-services.com',
 	}
 }
 
