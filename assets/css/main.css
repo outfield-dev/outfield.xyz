@@ -1,9 +1,14 @@
 
+html {
+	background-color: #eee;
+}
+
 body {
 	margin: 0px;
 	width: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
+	height: 100%;
 }
 
 #page-wrapper {
@@ -103,6 +108,7 @@ body {
 
 #activity-contact {
 	min-height: 500px;
+	background-color: #eee;
 }
 
 #twitter {
@@ -110,6 +116,7 @@ body {
 }
 
 #contact {
+	padding-left: 10px;
 	height: 500px;
 }
 
