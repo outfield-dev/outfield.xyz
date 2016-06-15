@@ -18,6 +18,7 @@ body {
 
 #logo-head img {
 	height: 100%;
+	visibility: hidden;
 }
 
 #nav {
@@ -32,38 +33,47 @@ body {
 
 #branding-heads-up {
 	height: 800px;
+	background-image: url('/static/home/img/banner.jpg');
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center;
 }
 
 #branding-heads-up img {
 	position: relative;
 	width: 300px;
-	top: 200px;
+	top: 150px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
 #future-of-agriculture {
-
+	min-height: 200px;
+	background-color: #b0a18e;
 }
 
 #how-does-it-work {
-
+	min-height: 200px;
 }
 
 #services {
-
+	min-height: 300px;
 }
 
 #safety-and-privacy {
-
+	min-height: 200px;
 }
 
 #what-happens-next {
-
+	min-height: 200px;
 }
 
 #team {
+	min-height: 400px;
+}
 
+#activity-contact {
+	min-height: 200px;
 }
 
 
@@ -75,19 +85,22 @@ body {
 
 /* Full page width */
 .section {
+	display: inline-block;
 	box-sizing: border-box;
 	width: 100%;
 	position: relative;
+	padding-top: 50px;
 	padding-left: 10%;
 	padding-right: 10%;
+	padding-bottom: 50px;
 }
 
 .section-title {
-
+	text-align: center;
 }
 
 .section-subtitle {
-
+	text-align: center;
 }
 
 .section-text {
@@ -101,10 +114,25 @@ body {
 	float: left;
 	padding-right: 10px;
 	height: 100%;
+	min-width: 250px;
+}
+
+.block-title {
+	text-align: center;
+}
+
+.block.half {
+	width: 50%;
 }
 
 .block.third {
 	width: calc(100% / 3);
+}
+
+.block.m {
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 /* Navigation links */
