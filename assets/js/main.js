@@ -22,6 +22,7 @@
 	$('#contact-form').find('.btn').click(function () {
 		// prevent it from submitting email
 		event.preventDefault();
+		console.log('send');
 
 		// send email via ajax
 		var formData = {
