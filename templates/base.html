@@ -136,6 +136,7 @@
 						<h2 class="block-title">Email</h2>
 						<p style="text-align:left; padding-left: 10px">Get in touch</p>
 						<form id="contact-form">
+							{% csrf_token %}
 							<div class="contact" style="position:absolute; width:45%;">
 								<input id="name" type="text" class="form-control" placeholder="Name">
 							</div>
