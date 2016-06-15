@@ -18,4 +18,6 @@
 			$('.third').removeClass('m');
 		}
 	});
+
+	
 })();
