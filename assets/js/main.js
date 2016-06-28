@@ -57,4 +57,10 @@ $(document).ready(function () {
 			scrollTop: $("#activity-contact").offset().top
 		}, 1000);
 	});
+
+	$('#back').click(function (event) {
+		$('html, body').animate({
+			scrollTop: $("#branding-heads-up").offset().top
+		}, 1000);
+	});
 });

@@ -57,6 +57,12 @@ body {
 	padding-top: 12px;
 }
 
+#back {
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+}
+
 #branding-heads-up img {
 	position: relative;
 	width: 300px;
