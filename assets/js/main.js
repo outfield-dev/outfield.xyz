@@ -55,6 +55,6 @@ $(document).ready(function () {
 	$('#cta').click(function (event) {
 		$('html, body').animate({
 			scrollTop: $("#activity-contact").offset().top
-		}, 2000);
+		}, 1000);
 	});
 });
