@@ -58,8 +58,9 @@ body {
 }
 
 #back {
-	position: relative;
-	bottom: 20px;
+	position: absolute;
+	left: auto;
+	bottom: 10px;
 	right: 20px;
 }
 
