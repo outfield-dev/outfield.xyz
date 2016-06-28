@@ -47,6 +47,11 @@ body {
   background-size: cover;
 }
 
+#cta {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 #branding-heads-up img {
 	position: relative;
 	width: 300px;

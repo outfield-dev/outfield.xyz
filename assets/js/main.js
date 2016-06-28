@@ -3,9 +3,11 @@ $(document).ready(function () {
 	if ($(window).width() < 800) {
 		$('.half').addClass('m');
 		$('.third').addClass('m');
+		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
 	} else {
 		$('.half').removeClass('m');
 		$('.third').removeClass('m');
+		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center fixed'});
 	}
 
 	// respond
@@ -13,9 +15,11 @@ $(document).ready(function () {
 		if ($(window).width() < 800) {
 			$('.half').addClass('m');
 			$('.third').addClass('m');
+			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
 		} else {
 			$('.half').removeClass('m');
 			$('.third').removeClass('m');
+			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center fixed'});
 		}
 	});
 
