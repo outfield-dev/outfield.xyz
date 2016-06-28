@@ -51,4 +51,10 @@ $(document).ready(function () {
 	$.ajaxSetup({
 		headers: { "X-CSRFToken": Cookies.get("csrftoken") }
 	});
+
+	$('#cta').click(function (event) {
+		$('html, body').animate({
+			scrollTop: $("#activity-contact").offset().top
+		}, 2000);
+	});
 });
