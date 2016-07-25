@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	// initialise
-	if ($(window).width() < 800) {
+	if ($(window).width() < 940) {
 		$('.half').addClass('m');
 		$('.third').addClass('m');
 		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 	// respond
 	$(window).on('resize', function () {
-		if ($(window).width() < 800) {
+		if ($(window).width() < 940) {
 			$('.half').addClass('m');
 			$('.third').addClass('m');
 			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
