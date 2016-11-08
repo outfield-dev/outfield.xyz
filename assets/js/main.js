@@ -3,11 +3,11 @@ $(document).ready(function () {
 	if ($(window).width() < 940) {
 		$('.half').addClass('m');
 		$('.third').addClass('m');
-		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
+		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center', 'background-size': 'cover'});
 	} else {
 		$('.half').removeClass('m');
 		$('.third').removeClass('m');
-		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
+		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center', 'background-size': 'cover'});
 	}
 
 	// respond
@@ -15,11 +15,11 @@ $(document).ready(function () {
 		if ($(window).width() < 940) {
 			$('.half').addClass('m');
 			$('.third').addClass('m');
-			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
+			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center', 'background-size': 'cover'});
 		} else {
 			$('.half').removeClass('m');
 			$('.third').removeClass('m');
-			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
+			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center', 'background-size': 'cover'});
 		}
 	});
 
