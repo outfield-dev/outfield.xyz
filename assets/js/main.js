@@ -7,7 +7,7 @@ $(document).ready(function () {
 	} else {
 		$('.half').removeClass('m');
 		$('.third').removeClass('m');
-		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center fixed'});
+		$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
 	}
 
 	// respond
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		} else {
 			$('.half').removeClass('m');
 			$('.third').removeClass('m');
-			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center fixed'});
+			$('#branding-heads-up').css({'background': 'url("/static/home/img/banner.jpg") no-repeat center center'});
 		}
 	});
 
